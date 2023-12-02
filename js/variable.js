@@ -5,7 +5,7 @@
 //const
 // 선언 후에 값을 바꿀 수 있음
 //let
-
+// json
 const person = {name: "kim", age: 25};
 
 console.log(person.name);
@@ -35,3 +35,9 @@ console.log(person);
 function modify(p) {
     p.name = "hwang";
 }
+
+
+const p = {};
+p.name = "kim";
+const o = new Object();
+o.name = "kang";
