@@ -1,3 +1,4 @@
+// Person.protype __proto__ << Object.prototype
 Person.prototype.getVersion = function() {
     return this.version;
 };
@@ -20,7 +21,14 @@ function Person(name, age) {
     //return this;
 }
 
+// {__proto__: Person.prototype, name: "kang", age:15, getInfo, showInfo};
 const p = new Person("kang", 15);
+// {__proto__: Person.prototype, name: "kim", age:25, getInfo, showInfo}};
 const p2 = new Person("kim", 25);
 console.log(p.getInfo());
 p.showInfo();
+// prototype chaining
+// 자바스크립트 객체는 함수에서 객체의 프로퍼티를 접근하려고 하는데
+// 객체 자신의 프로퍼티가 없을 경우 __proto__ 이용하여 탐색을 이어감
+const v = p.getVersion();
+console.log(v);
