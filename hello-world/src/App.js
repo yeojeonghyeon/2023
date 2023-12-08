@@ -5,6 +5,7 @@ import MenuContainer from './component/MenuContainer';
 import CounterContainer from './component/Counter.js';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './component/Header';
+import { ChatComponent } from './component/ChatComponent.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/menu" element={<MenuContainer hobbies={menuObj.hobbies} foods={menuObj.foods} />}></Route>
           <Route path="/counter" element={<CounterContainer />} />
+          <Route path="/chat" element={<ChatComponent />} />
         </Routes>
       </div>
     </BrowserRouter>    

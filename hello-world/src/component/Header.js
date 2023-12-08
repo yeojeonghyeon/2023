@@ -5,6 +5,7 @@ export default function Header() {
         <div className={styles.header}>
             <Link to={"/menu"}>Menu</Link>
             <Link to={"/counter"}>Counter</Link>
+            <Link to={"/chat"}>chat-GPT</Link>
         </div>
     );
 }
